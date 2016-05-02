@@ -23,7 +23,7 @@ install: dummy
 uninstall:
 	rm -rf ${datadir}
 
-test:
+test: dummy
 	${PG_REGRESS} \
 	--inputdir=./ \
    --inputdir=test \
