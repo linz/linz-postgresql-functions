@@ -1,5 +1,7 @@
 # Minimal script to install the SQL creation scripts ready for postinst script.
 
+VERSION=dev
+
 datadir=${DESTDIR}/usr/share/linz-postgresql-functions
 
 #
