@@ -2,7 +2,7 @@
 
 All notable changes for the LINZ PostgreSQL functions are documented in this file.
 
-## [Unreleased] - xxxx-xx-xx
+## 1.0.0 - 2016-05-03
 ### Added
 - Initial release.
 
