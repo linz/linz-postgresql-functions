@@ -1,15 +1,20 @@
 Source: linz-postgresql-functions
 Section: database
 Priority: extra
-Build-Depends: debhelper (>= 7), postgresql-server-dev-9.3, postgresql-9.3-pgtap, postgresql-9.3-postgis-2.2
+Build-Depends: debhelper (>= 7),
+               postgresql-server-dev-9.3,
+               postgresql-9.3-postgis-2.1|postgresql-9.3-postgis-2.2
+Standards-Version: 3.9.5
 Maintainer: Jeremy Palmer (LINZ) <jpalmer@linz.govt.nz>
 Homepage: http://www.linz.govt.nz
-Vcs-Svn: git://github.com/linz/linz-postgresql-functions.git
+Vcs-Git: git://github.com/linz/linz-postgresql-functions.git
 Vcs-Browser: https://github.com/linz/linz-postgresql-functions
 
 Package: linz-postgresql-9.3-functions
 Architecture: all
-Depends: ${misc:Depends}, postgresql-9.3, postgresql-9.3-postgis-2.2
+Depends: ${misc:Depends},
+         postgresql-9.3,
+         postgresql-9.3-postgis-2.1|postgresql-9.3-postgis-2.2
 Recommends:
-Description: Miscellaneous PostgreSQL functions from LINZ. 
+Description: Miscellaneous PostgreSQL functions from LINZ.
 
