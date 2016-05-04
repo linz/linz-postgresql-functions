@@ -1,6 +1,5 @@
-linz-postgresql-functions (1.0.0-1linz~trusty1) UNRELEASED; urgency=medium
+linz-postgresql-functions (1.0.0-1linz~trusty1) trusty; urgency=medium
 
-  * Initial release
+  * Packaging for LINZ's Software Repository
 
- -- Jeremy Palmer <jpalmer@linz.govt.nz>  Tue, 03 May 2016 06:40:10 +1200
-
+ -- Ivan Mincik <imincik@linz.govt.nz>  Wed, 04 May 2016 15:55:56 +1200
