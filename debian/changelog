@@ -1,4 +1,4 @@
-linz-postgresql-functions (1.0.0-1linz~trusty1) UNRELEASED; urgency=medium
+linz-postgresql-functions (1.0.0-1linz~trusty1) trusty; urgency=medium
 
   * Packaging for LINZ's Software Repository
 
