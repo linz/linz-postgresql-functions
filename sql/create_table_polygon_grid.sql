@@ -206,15 +206,9 @@ BEGIN
     -- set table permissions
     v_sql := 'ALTER TABLE ' || v_full_output_table || ' OWNER TO ' || 
         quote_ident((
-            SELECT rolname 
-            FROM pg_authid
-            WHERE oid = (
-                SELECT refobjid 
-                FROM pg_shdepend 
-                WHERE objid=v_table_oid
-                AND deptype='o'
-                )
-            ));
+            SELECT pg_get_userbyid(relowner)
+            FROM pg_class where oid = v_table_oid
+        ));
     EXECUTE v_sql;
 
     v_rights := ARRAY[
@@ -230,10 +224,13 @@ BEGIN
     FOR v_rolename IN
         SELECT AUTH.rolname
         FROM   pg_shdepend DEP,
-               pg_authid AUTH
-        WHERE  DEP.objid = v_table_oid
+               pg_authid AUTH,
+               pg_database DB
+        WHERE  DEP.dbid = DB.oid
+        AND    DEP.objid = v_table_oid
         AND    AUTH.oid = DEP.refobjid
         AND    DEP.deptype='a'
+        AND    DB.datname = current_database()
     LOOP
         FOR v_right IN SELECT * FROM unnest(v_rights)
         LOOP
