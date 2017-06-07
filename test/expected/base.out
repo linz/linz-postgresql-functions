@@ -1,15 +1,3 @@
---------------------------------------------------------------------------------
---
--- Copyright 2016 Crown copyright (c)
--- Land Information New Zealand and the New Zealand Government.
--- All rights reserved
---
--- This software is released under the terms of the new BSD license. See the 
--- LICENSE file for more information.
---
---------------------------------------------------------------------------------
--- Provide unit testing for LINZ misc PostgreSQL functions using pgTAP
---------------------------------------------------------------------------------
 \set ECHO none
 1..1
 ok 1 - Function public.create_table_polygon_grid(name, name, name, double precision, double precision) should exist

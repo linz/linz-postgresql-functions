@@ -1,5 +1,5 @@
+\set ECHO none
 --------------------------------------------------------------------------------
-
 --
 -- Copyright 2016 Crown copyright (c)
 -- Land Information New Zealand and the New Zealand Government.
@@ -11,9 +11,8 @@
 --------------------------------------------------------------------------------
 -- Provide unit testing for LINZ misc PostgreSQL functions using pgTAP
 --------------------------------------------------------------------------------
-\set ECHO none
 \set QUIET true
-\set VERBOSITY verbose
+\set VERBOSITY terse
 \pset format unaligned
 \pset tuples_only true
 
