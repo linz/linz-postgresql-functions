@@ -110,7 +110,7 @@ BEGIN
         || quote_ident(p_table_name) || ' AS SRC ' || v_sql_filter;
     EXECUTE v_sql INTO v_count;
     IF NOT v_count > 0 THEN
-        RAISE EXCEPTION 'Table %.% column & does not contain any polygons',
+        RAISE EXCEPTION 'Table %.% column % does not contain any polygons',
             quote_literal(p_schema_name), quote_ident(p_table_name), quote_ident(p_column_name);
     END IF;
 

@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/linz/linz-postgresql-functions.svg?branch=master)](https://travis-ci.org/linz/linz-postgresql-functions)
+
 LINZ PostgreSQL Support Functions
 ========================
 
