@@ -1,3 +1,11 @@
 \set ECHO none
-1..1
+1..9
 ok 1 - Function public.create_table_polygon_grid(name, name, name, double precision, double precision) should exist
+ok 2 - threw Table public.test does not exists
+ok 3 - threw Table public.test geometry column fake does not exists
+ok 4 - threw Table 'public'.test column g does not contain any polygons
+ok 5 - threw Table 'public'.test does not have a unique non-composite, non-null primary key
+ok 6 - create_table_polygon_grid returns test_grid
+ok 7 - Sum of geometry areas is 400
+ok 8 - No grid geometry has area bigger than 100
+ok 9 - Symdifference between source geom and union of grid geoms is empty
