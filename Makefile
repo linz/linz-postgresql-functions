@@ -11,7 +11,9 @@ datadir=${DESTDIR}/usr/share/linz-postgresql-functions
 PG_CONFIG    = pg_config
 PGXS := $(shell $(PG_CONFIG) --pgxs)
 PG_REGRESS := $(dir $(PGXS))../../src/test/regress/pg_regress
-REGRESS_OPTS = --inputdir=test --load-language=plpgsql
+REGRESS_OPTS = --inputdir=test \
+  --load-language=plpgsql \
+  --load-extension=postgis
 REGRESS      = $(patsubst test/sql/%.sql,%,$(wildcard test/sql/*.sql))
 
 include $(PGXS)
