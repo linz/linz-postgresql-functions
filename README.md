@@ -82,7 +82,7 @@ Build the debian packages using the following command:
 Dependencies
 ------------
 
-Requires PostgreSQL 9.0+/PostGIS 1.5+ and the PL/PgSQL language extension installed.
+Requires PostgreSQL 9.2+/PostGIS 1.5+ and the PL/PgSQL language extension installed.
 
 License
 ---------------------
