@@ -10,7 +10,6 @@
 -- LICENSE file for more information.
 --
 --------------------------------------------------------------------------------
-SET SEARCH_PATH = public;
 
 --------------------------------------------------------------------------
 -- create_table_polygon_grid(<schema>, <table>, <column>, <res_x>, <res_y>)
