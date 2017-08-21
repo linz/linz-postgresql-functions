@@ -1,7 +1,5 @@
 ﻿--------------------------------------------------------------------------------
 --
--- $Id$
---
 -- Copyright 2016 Crown copyright (c)
 -- Land Information New Zealand and the New Zealand Government.
 -- All rights reserved
