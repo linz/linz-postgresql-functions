@@ -1,3 +1,9 @@
+linz-postgresql-functions (1.0.0-2linz~trusty1) trusty; urgency=medium
+
+  * Adding support for multiple PostgreSQL and PostGIS versions
+
+ -- Ivan Mincik <imincik@linz.govt.nz>  Wed, 17 Oct 2018 10:11:00 +0200
+
 linz-postgresql-functions (1.0.0-1linz~trusty1) trusty; urgency=medium
 
   * Packaging for LINZ's Software Repository

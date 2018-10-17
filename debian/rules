@@ -1,7 +1,22 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+# export DH_VERBOSE=1
+
+export PREFIX=/usr
+
+include /usr/share/postgresql-common/pgxs_debian_control.mk
+
 
 %:
 	dh $@
+
+override_dh_auto_build:
+	+pg_buildext build $(CURDIR) .
+
+override_dh_auto_install:
+	+pg_buildext install $(CURDIR) . linz-postgresql-%v-functions
 
 override_dh_auto_test:
 	@echo "Test are disabled for Debian packaging"
