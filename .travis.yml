@@ -4,6 +4,9 @@ dist: focal
 sudo: true
 language: sql
 
+branches:
+  only:
+    - master
 
 matrix:
   include:
