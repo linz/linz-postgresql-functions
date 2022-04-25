@@ -3,7 +3,7 @@
 LINZ PostgreSQL Support Functions
 ========================
 
-Miscellaneous PostgreSQL functions from LINZ. 
+Miscellaneous PostgreSQL functions from LINZ.
 
 Functions
 ---------
