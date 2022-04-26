@@ -82,7 +82,7 @@ SELECT is( (
     SELECT ST_Union(geom) FROM test_grid
   )))::text
   FROM public.test ),
-  'GEOMETRYCOLLECTION EMPTY'::text,
+  'POLYGON EMPTY'::text,
   'Symdifference between source geom and union of grid geoms is empty'
 );
 
