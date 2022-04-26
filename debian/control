@@ -9,35 +9,10 @@ Homepage: http://www.linz.govt.nz
 Vcs-Git: git://github.com/linz/linz-postgresql-functions.git
 Vcs-Browser: https://github.com/linz/linz-postgresql-functions
 
-Package: linz-postgresql-9.3-functions
+Package: linz-postgresql-14-functions
 Architecture: all
 Depends: ${misc:Depends},
-         postgresql-9.3,
-         postgresql-9.3-postgis-2.4|postgresql-9.3-postgis-2.3|postgresql-9.3-postgis-2.2|postgresql-9.3-postgis-2.1
+         postgresql-14,
+         postgresql-14-postgis-3
 Recommends:
 Description: Miscellaneous PostgreSQL functions from LINZ.
-
-Package: linz-postgresql-9.4-functions
-Architecture: all
-Depends: ${misc:Depends},
-         postgresql-9.4,
-         postgresql-9.4-postgis-2.4|postgresql-9.4-postgis-2.3|postgresql-9.4-postgis-2.2|postgresql-9.4-postgis-2.1
-Recommends:
-Description: Miscellaneous PostgreSQL functions from LINZ.
-
-Package: linz-postgresql-9.5-functions
-Architecture: all
-Depends: ${misc:Depends},
-         postgresql-9.5,
-         postgresql-9.5-postgis-2.4|postgresql-9.5-postgis-2.3|postgresql-9.5-postgis-2.2|postgresql-9.5-postgis-2.1
-Recommends:
-Description: Miscellaneous PostgreSQL functions from LINZ.
-
-Package: linz-postgresql-9.6-functions
-Architecture: all
-Depends: ${misc:Depends},
-         postgresql-9.6,
-         postgresql-9.6-postgis-2.4|postgresql-9.6-postgis-2.3|postgresql-9.6-postgis-2.2|postgresql-9.6-postgis-2.1
-Recommends:
-Description: Miscellaneous PostgreSQL functions from LINZ.
-

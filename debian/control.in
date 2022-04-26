@@ -13,7 +13,7 @@ Package: linz-postgresql-PGVERSION-functions
 Architecture: all
 Depends: ${misc:Depends},
          postgresql-PGVERSION,
-         postgresql-PGVERSION-postgis-2.4|postgresql-PGVERSION-postgis-2.3|postgresql-PGVERSION-postgis-2.2|postgresql-PGVERSION-postgis-2.1
+         postgresql-PGVERSION-postgis-3
 Recommends:
 Description: Miscellaneous PostgreSQL functions from LINZ.
 
